@@ -1,0 +1,222 @@
+/*
+Base
+*/* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* heading fonts*/
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Montserrat', sans-serif;
+	color:#414141
+}
+
+/* set default font*/
+p, span, strong, a {
+	font-family: 'Poppins', sans-serif;
+	color:#1a1a1a
+}
+
+body {
+	background-color: #fafafa;
+}
+
+main {
+	min-height: 90vh;
+}
+/*--------------------------
+HEADER Components & styling
+-------------------------*/
+
+ .logo {
+	position:absolute;
+    top:25px; 
+    left:10px;
+    width:60px;
+    height:60px;
+    overflow:hidden;
+	font-size: 1rem;
+ }
+ 
+ .header {
+    height: 6rem;
+	background-color: #ffffff;
+	border-bottom: solid 1px #d4d4d4;
+}
+
+/*
+---------------------------
+*/
+
+/*--------------------------
+Wrap around content + containers with content in
+-------------------------*/
+
+.wrap {
+	display: flex;
+
+}
+
+.main-content {
+	flex: 1 1 0;
+	padding: 2rem;
+	line-height: 1.6;
+}
+
+
+/*
+Sidebar style --------------------
+*/
+.toggleBtn {
+	display: none;
+	position: fixed;
+	top: 2rem;
+	right: 2rem;
+	width: 60px;
+	height: 60px;
+	border-radius: 99px;
+	background-color: #2e3047;
+	cursor: pointer;
+}
+
+.hamburger {
+	position: relative;
+	top: calc(50% - 2px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 32px;
+}
+
+.hamburger > span,
+.hamburger > span::before,
+.hamburger > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 99px;
+  background-color: #FFF;
+  transition-duration: .25s;
+}
+
+.hamburger > span::before {
+  content: '';
+  top: -8px;
+}
+.hamburger > span::after {
+  content: '';
+  top: 8px;
+}
+.toggleBtn.active .hamburger > span {
+  transform: rotate(45deg);
+}
+.toggleBtn.active .hamburger > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+.toggleBtn.active .hamburger > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.sidebar {
+	flex: 1 1 0;
+	max-width: 300px;
+	padding: 2rem 1rem;
+	background-color: #3b6064;
+}
+
+.sidebar h3 {
+	color: #c4c4c4;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	margin-bottom: 0.5em;
+	text-align: center;
+}
+
+.sidebar .menu {
+	margin: 0 -1rem;
+}
+
+.sidebar .menu .sidebar-li {
+	display: block;
+	padding: 1em;
+	color: #FFF;
+	text-decoration: none;
+	transition: 0.2s linear;
+	width: 100%;
+	text-align: center;
+}
+
+.sidebar .menu .sidebar-li:hover,
+.sidebar .menu .sidebar.active {
+	color: #3bba9c;
+	border-right: 5px solid #3bba9c;
+}
+
+.sidebar .menu .sidebar-li:hover {
+	border-right: 5px solid #3bba9c;
+}
+
+
+/*
+---------- FOOTER -----------------
+*/
+
+.footer-container p {
+	color: white;
+	background-color: #314547;
+    color: #fff; /* white text color */
+    padding: 20px; /* adds padding around the content */
+    text-align: center;
+	min-height: 5vh;
+}
+  .footer-container a {
+	text-decoration: none;
+	color: white;
+  }
+  footer a:hover{
+	text-decoration: underline;
+  }
+
+ 
+/*---------------------------------*/
+
+/*--- Responsive settings ---------- */
+@media (max-width: 1024px) {
+	.sidebar {
+		max-width: 200px;
+	}
+}
+
+@media (max-width: 768px) {
+	.toggleBtn {
+		display: block;
+		margin-top: -1rem;
+	}
+	.content {
+		padding-top: 8rem;
+	}
+	.sidebar {
+		position: fixed;
+		top: 0;
+		left: -300px;
+		height: 100vh;
+		width: 100%;
+		max-width: 300px;
+		transition: 0.2s linear;
+	}
+
+	.sidebar.active {
+		left: 0;
+	}
+}
+
+@media (max-width: 572px) {
+	 .header {
+		height: 7rem;
+	 }
+}
+
+
