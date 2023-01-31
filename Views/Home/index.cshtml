@@ -12,11 +12,10 @@
     <div class="col-2">
         <h2>Destinations</h2>
         <section>
-            <ul>
-                @foreach(var destination in Model) {
-                    <li><a href="@destination.DestinationUrl"></a>@destination.DestinationName</li>
-                }
-            </ul>
+            @foreach (var destination in Model)
+            {
+                <a href="@destination.DestinationUrl">@destination.DestinationName</a>
+            }    
         </section>
     </div>
 </div>

@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
 using DennisMvc.Models;
+using Newtonsoft.Json;
+
+
+
 
 
 namespace DennisMvc.Controllers
@@ -14,9 +17,7 @@ namespace DennisMvc.Controllers
     
         public IActionResult Index()
         {
-            // read JSON
             var jsonStr = System.IO.File.ReadAllText("destinations.json");
-            // convert json
             var JsonObj = JsonConvert.DeserializeObject<IEnumerable<Destinations>>(jsonStr);
             return View(JsonObj);
         }
