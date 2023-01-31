@@ -16,7 +16,7 @@
   <body>
     <header>
       <div class="header">
-        <img class="logo" src="~/images/logo.svg">
+       <a id="logo-container" alt="DennisMvc" asp-controller="Home" asp-action="Index"> <img class="logo" src="~/images/logo.svg"></a>
       </div>
     </header>
     <div class="wrap">
@@ -28,8 +28,8 @@
       <aside class="sidebar">
         <h3>Menu</h3>
         <nav class="menu">
-          <a href="#" class="sidebar-li">Home</a>
-          <a href="#" class="sidebar-li">About</a>
+          <a asp-controller="Home" asp-action="Index" class="sidebar-li">Home</a>
+          <a asp-controller="Home" asp-action="About" class="sidebar-li">About</a>
         </nav>
       </aside>
       <div class="main-content">
