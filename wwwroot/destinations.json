@@ -1,0 +1,22 @@
+[
+    {
+        "Id" : 1,
+        "DestinationName" : "Sölden",
+        "DestinationUrl" : "www.google.se"
+    },
+    {
+        "Id" : 2,
+        "DestinationName" : "Sölden",
+        "DestinationUrl" : "www.google.se"
+    },
+    {
+        "Id" : 3,
+        "DestinationName" : "Sölden",
+        "DestinationUrl" : "www.google.se"
+    },
+    {
+        "Id" : 4,
+        "DestinationName" : "Sölden",
+        "DestinationUrl" : "www.google.se"
+    }
+]
