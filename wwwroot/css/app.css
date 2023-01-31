@@ -17,7 +17,9 @@ p, span, strong, a {
 	font-family: 'Poppins', sans-serif;
 	color:#1a1a1a
 }
-
+.logo {
+	height: 2rem;
+}
 body {
 	background-color: #fafafa;
 }
