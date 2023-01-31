@@ -1,5 +1,8 @@
+@model IEnumerable<DennisMvc.Models.Destinations>
 @{
     ViewData["Title"] = "Home";
+    
+    
 }
 <div class="container">
     <div class="col-1">
@@ -7,7 +10,13 @@
         <p>Lorem asd sss orem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sss </p>
     </div>
     <div class="col-2">
-        <h2>Second Heading</h2>
-         <p>Lorem asd sss orem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sss </p>
+        <h2>Destinations</h2>
+        <section>
+            <ul>
+                @foreach(var destination in Model) {
+                    <li><a href="@destination.DestinationUrl"></a>@destination.DestinationName</li>
+                }
+            </ul>
+        </section>
     </div>
 </div>

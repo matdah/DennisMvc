@@ -11,7 +11,7 @@ namespace DennisMvc.Controllers
 {
     public class HomeController : Controller
     {
-        [Route("/home")]
+    
         public IActionResult Index()
         {
             // read JSON
