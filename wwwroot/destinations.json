@@ -2,21 +2,21 @@
     {
         "Id" : 1,
         "DestinationName" : "Sölden",
-        "DestinationUrl" : "www.google.se"
+        "DestinationUrl" : "www.test.se"
     },
     {
         "Id" : 2,
-        "DestinationName" : "Sölden",
-        "DestinationUrl" : "www.google.se"
+        "DestinationName" : "Cervinia",
+        "DestinationUrl" : "www.test.se"
     },
     {
         "Id" : 3,
-        "DestinationName" : "Sölden",
-        "DestinationUrl" : "www.google.se"
+        "DestinationName" : "Zel Am See",
+        "DestinationUrl" :  "www.test.se"
     },
     {
         "Id" : 4,
-        "DestinationName" : "Sölden",
-        "DestinationUrl" : "www.google.se"
+        "DestinationName" : "Champoluc",
+        "DestinationUrl" : "www.test.se"
     }
 ]
