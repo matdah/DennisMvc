@@ -2,21 +2,21 @@
     {
         "Id" : 1,
         "DestinationName" : "Sölden",
-        "DestinationUrl" : "www.test.se"
+        "DestinationUrl" : "https://www.soelden.com/winter.html"
     },
     {
         "Id" : 2,
         "DestinationName" : "Cervinia",
-        "DestinationUrl" : "www.test.se"
+        "DestinationUrl" : "https://www.cervinia.it/en"
     },
     {
         "Id" : 3,
         "DestinationName" : "Zel Am See",
-        "DestinationUrl" :  "www.test.se"
+        "DestinationUrl" :  "https://www.zellamsee-kaprun.com/en/experience/zell-am-see"
     },
     {
         "Id" : 4,
         "DestinationName" : "Champoluc",
-        "DestinationUrl" : "www.test.se"
+        "DestinationUrl" : "https://aosta-valley.co.uk/destinations/champoluc/"
     }
 ]

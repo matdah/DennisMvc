@@ -4,16 +4,19 @@
 
 <div class="container">
     <div class="col-1">
-        <h1>Dest page</h1>
+        <h1>Destinations</h1>
         <p>Lorem asd sss orem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sssorem asd sss </p>
     </div>
     <div class="col-2">
-         <h2>Destinations</h2>
-        <section>
+        <section></section>
+         <h2>Visited</h2>
+        <p>Some of the destinations I have visited:</p>
+            <ul>
             @foreach (var destination in Model)
             {
-                <a href="@destination.DestinationUrl">@destination.DestinationName</a>
-            }    
+                <li class="li-items"><a href="@destination.DestinationUrl">@destination.DestinationName</a></li>
+            }
+            </ul>    
         </section>
     </div>
 </div>

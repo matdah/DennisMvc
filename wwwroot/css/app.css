@@ -66,6 +66,7 @@ Wrap around content + containers with content in
 	line-height: 1.6;
 }
 
+
 .col-1 {
 	border: red solid 2px;
 	flex: 1;
@@ -74,6 +75,19 @@ Wrap around content + containers with content in
 .col-2 {
 	border: red solid 2px;
 	flex: 1;
+}
+.li-items {
+	margin-left: 2rem;
+}
+.li-items a{
+	text-decoration: none;
+	color:chocolate;
+}
+
+.li-items a:hover {
+color: green;
+text-decoration: underline;
+
 }
 /*
 Sidebar style --------------------
