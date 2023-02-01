@@ -205,13 +205,16 @@ Sidebar style --------------------
 ---------- FOOTER -----------------
 */
 
-.footer-container p {
-	color: white;
+.footer-container {
 	background-color: #314547;
-    color: #fff; /* white text color */
     padding: 20px; /* adds padding around the content */
     text-align: center;
 	min-height: 5vh;
+}
+
+
+.footer-container p {
+	color: white;
 }
   .footer-container a {
 	text-decoration: none;
