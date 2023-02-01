@@ -17,6 +17,9 @@ namespace DennisMvc.Controllers
     
         public IActionResult Index()
         {
+           ViewBag.Heading = "ViewBag";
+           ViewBag.Text = "This heading and text is brought to you by the ViewBag property."; 
+           ViewData["ErrorMessage"] = "This example of a 'Error message' is brought to you from the ViewBag!";
            return View();
         }
 

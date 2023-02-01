@@ -149,8 +149,8 @@ Sidebar style --------------------
 
 .sidebar {
 	flex: 1 1 0;
-	max-width: 300px;
-	padding: 2rem 1rem;
+	
+	padding: 2rem 2rem;
 	background-color: #3b6064;
 }
 
@@ -186,6 +186,18 @@ Sidebar style --------------------
 	border-right: 5px solid #3bba9c;
 }
 
+.error {
+	background-color: rgb(218, 101, 101);
+	width: 20rem;
+	padding: .2rem;
+	border-radius: 3px;
+	margin-top: .5rem;
+	
+}
+
+.error p {
+	color:rgb(92, 22, 22)
+}
 
 /*
 ---------- FOOTER -----------------
