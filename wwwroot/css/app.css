@@ -17,6 +17,10 @@ p, span, strong, a {
 	font-family: 'Poppins', sans-serif;
 	color:#1a1a1a
 }
+
+p {
+	max-width: 75ch;
+}
 .logo {
 	height: 2rem;
 }
@@ -68,12 +72,10 @@ Wrap around content + containers with content in
 
 
 .col-1 {
-	border: red solid 2px;
 	flex: 1;
 }
 
 .col-2 {
-	border: red solid 2px;
 	flex: 1;
 }
 .li-items {
@@ -149,7 +151,7 @@ Sidebar style --------------------
 
 .sidebar {
 	flex: 1 1 0;
-	
+	max-width: 300px;
 	padding: 2rem 2rem;
 	background-color: #3b6064;
 }
