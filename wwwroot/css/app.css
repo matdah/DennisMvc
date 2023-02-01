@@ -187,7 +187,7 @@ Sidebar style --------------------
 }
 
 .error {
-	background-color: rgb(218, 101, 101);
+	background-color: rgba(221, 101, 101, 0.799);
 	width: 20rem;
 	padding: .2rem;
 	border-radius: 3px;
