@@ -87,7 +87,10 @@ Wrap around content + containers with content in
 .li-items a:hover {
 color: green;
 text-decoration: underline;
+}
 
+.li-items a:visited {
+	color: grey;
 }
 /*
 Sidebar style --------------------
