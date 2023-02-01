@@ -17,15 +17,21 @@ namespace DennisMvc.Controllers
     
         public IActionResult Index()
         {
-            var jsonStr = System.IO.File.ReadAllText("destinations.json");
-            var JsonObj = JsonConvert.DeserializeObject<IEnumerable<Destinations>>(jsonStr);
-            return View(JsonObj);
+           return View();
         }
 
        [Route("/about")]
         public IActionResult About()
         {
             return View();
+        }
+
+         [Route("/destinations")]
+        public IActionResult Destinations()
+        {
+            var jsonStr = System.IO.File.ReadAllText("destinations.json");
+            var JsonObj = JsonConvert.DeserializeObject<IEnumerable<Destinations>>(jsonStr);
+            return View(JsonObj);
         }
     }
 }
