@@ -21,7 +21,13 @@
 </div>
         <div class="col-2">
             <section>
-         <h2>Visited</h2>
+           <h2>Visited</h2>
+            <ul>
+                @foreach (var destination in ViewBag.JsonObj)
+                {
+                    <li class="li-items"><a target="_blank" href="@destination.DestinationUrl">@destination.DestinationName</a></li>
+                }
+            </ul>  
          
             </section>
    </div> 
