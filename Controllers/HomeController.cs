@@ -36,7 +36,9 @@ namespace DennisMvc.Controllers
             var jsonStr = System.IO.File.ReadAllText("destinations.json");
             var JsonObj = JsonConvert.DeserializeObject<List<Destinations>>(jsonStr);
             ViewBag.JsonObj = JsonObj;
-            return View(JsonObj);
+            
+            /* Question: when using ViewBag to present the JsonObj I dont need to pass JsonObj into View()?*/
+            return View();
         }
     }
 }

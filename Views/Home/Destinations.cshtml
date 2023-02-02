@@ -10,9 +10,11 @@
 <div class="form-container mt-3">
        <h2>Add Destination</h2>
   <form method="post">
-    <label asp-for="DestinationName">Destination</label>
+    <label asp-for="DestinationName">Destination name:</label>
     <input asp-for="DestinationName">
-    <input type="submit" value="Submit">
+  <label asp-for="DestinationUrl">Destination Url:</label>
+  <input asp-for="DestinationUrl">
+    <input type="submit" value="Add destination">
   </form>
 </div>
         </section>
@@ -20,12 +22,7 @@
         <div class="col-2">
             <section>
          <h2>Visited</h2>
-            <ul>
-                @foreach (var destination in ViewBag.JsonObj)
-                {
-                    <li class="li-items"><a target="_blank" href="@destination.DestinationUrl">@destination.DestinationName</a></li>
-                }
-            </ul>    
+         
             </section>
    </div> 
 </div>
