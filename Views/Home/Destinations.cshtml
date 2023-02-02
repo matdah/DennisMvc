@@ -1,4 +1,3 @@
-
 @{
     ViewData["Title"] = "Destinations";
 }
@@ -10,6 +9,8 @@
 <div class="form-container mt-3">
        <h2>Add Destination</h2>
   <form method="post">
+    <label asp-for="DestinationName">Destination</label>
+    <input asp-for="DestinationName">
     <input type="submit" value="Submit">
   </form>
 </div>
@@ -19,7 +20,7 @@
             <section>
          <h2>Visited</h2>
             <ul>
-                @foreach (var destination in Model)
+                @foreach (var destination in ViewBag.JsonObj)
                 {
                     <li class="li-items"><a target="_blank" href="@destination.DestinationUrl">@destination.DestinationName</a></li>
                 }
