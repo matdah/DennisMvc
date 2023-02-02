@@ -32,7 +32,7 @@ namespace DennisMvc.Controllers
          [Route("/destinations")]
         public IActionResult Destinations()
         {
-            ViewBag.Destinations = "There is plenty of great destinations you could visit if you want a great experience in snowboarding and skiing. In the list below that are read from a JSON file called 'destinations.json' I saved some of the places I have ben to! (This text is presented with 'ViewBag').";
+            ViewBag.Destinations = "Whenever I have ben to one of the great Alp destinations I can add a destination to my list throug the form below! (This description is presented with 'ViewBag').";
             var jsonStr = System.IO.File.ReadAllText("destinations.json");
             var JsonObj = JsonConvert.DeserializeObject<IEnumerable<Destinations>>(jsonStr);
             return View(JsonObj);

@@ -1,24 +1,29 @@
+
 @{
     ViewData["Title"] = "Destinations";
 }
-
 <div class="container">
     <div class="col-1">
         <section>
         <h1>Destinations</h1>
-        <p>@ViewBag.Destinations</p>
+        <p>@ViewBag.Destinations</p>  
+<div class="form-container mt-3">
+       <h2>Add Destination</h2>
+  <form method="post">
+    <input type="submit" value="Submit">
+  </form>
+</div>
         </section>
-
-        <section>
+</div>
+        <div class="col-2">
+            <section>
          <h2>Visited</h2>
             <ul>
-            @foreach (var destination in Model)
-            {
-                <li class="li-items"><a target="_blanc" href="@destination.DestinationUrl">@destination.DestinationName</a></li>
-            }
+                @foreach (var destination in Model)
+                {
+                    <li class="li-items"><a target="_blank" href="@destination.DestinationUrl">@destination.DestinationName</a></li>
+                }
             </ul>    
-    </section>
-        
-    </div>
-    
+            </section>
+   </div> 
 </div>
