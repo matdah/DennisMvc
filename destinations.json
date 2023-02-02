@@ -1,22 +1,32 @@
 [
-    {
-        "Id" : 1,
-        "DestinationName" : "Sölden",
-        "DestinationUrl" : "https://www.soelden.com/winter.html"
-    },
-    {
-        "Id" : 2,
-        "DestinationName" : "Cervinia",
-        "DestinationUrl" : "https://www.cervinia.it/en"
-    },
-    {
-        "Id" : 3,
-        "DestinationName" : "Zel Am See",
-        "DestinationUrl" :  "https://www.zellamsee-kaprun.com/en/experience/zell-am-see"
-    },
-    {
-        "Id" : 4,
-        "DestinationName" : "Champoluc",
-        "DestinationUrl" : "https://aosta-valley.co.uk/destinations/champoluc/"
-    }
+  {
+    "Id": 1,
+    "DestinationName": "Sölden",
+    "DestinationUrl": "https://www.soelden.com/winter.html"
+  },
+  {
+    "Id": 2,
+    "DestinationName": "Cervinia",
+    "DestinationUrl": "https://www.cervinia.it/en"
+  },
+  {
+    "Id": 3,
+    "DestinationName": "Zel Am See",
+    "DestinationUrl": "https://www.zellamsee-kaprun.com/en/experience/zell-am-see"
+  },
+  {
+    "Id": 4,
+    "DestinationName": "Champoluc",
+    "DestinationUrl": "https://aosta-valley.co.uk/destinations/champoluc/"
+  },
+  {
+    "Id": 0,
+    "DestinationName": "1",
+    "DestinationUrl": "2"
+  },
+  {
+    "Id": 0,
+    "DestinationName": "Gnarps höjder och tillhörande domäner",
+    "DestinationUrl": "https://gnarp.se"
+  }
 ]

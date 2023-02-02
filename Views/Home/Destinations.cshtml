@@ -1,34 +1,36 @@
 @model DennisMvc.Models.Destinations;
 @{
-    ViewData["Title"] = "Destinations";
+  ViewData["Title"] = "Destinations";
 }
 <div class="container">
-    <div class="col-1">
-        <section>
-        <h1>Destinations</h1>
-        <p>@ViewBag.Destinations</p>  
-<div class="form-container mt-3">
-       <h2>Add Destination</h2>
-  <form method="post">
-    <label asp-for="DestinationName">Destination name:</label>
-    <input asp-for="DestinationName">
-  <label asp-for="DestinationUrl">Destination Url:</label>
-  <input asp-for="DestinationUrl">
-    <input type="submit" value="Add destination">
-  </form>
-</div>
-        </section>
-</div>
-        <div class="col-2">
-            <section>
-           <h2>Visited</h2>
-            <ul>
-                @foreach (var destination in ViewBag.JsonObj)
-                {
-                    <li class="li-items"><a target="_blank" href="@destination.DestinationUrl">@destination.DestinationName</a></li>
-                }
-            </ul>  
-         
-            </section>
-   </div> 
+  <div class="col-1">
+    <section>
+      <h1>Destinations</h1>
+      <p>@ViewBag.Destinations</p>
+      <div class="form-container mt-3">
+        <h2>Add Destination</h2>
+        <form method="post">
+          <div asp-validation-summary="All" class="text-danger"></div>
+          <label asp-for="DestinationName">Destination name:</label>
+          <input asp-for="DestinationName">
+          <label asp-for="DestinationUrl">Destination Url:</label>
+          <input asp-for="DestinationUrl">
+          <input type="submit" value="Add destination">
+        </form>
+      </div>
+    </section>
+  </div>
+  <div class="col-2">
+    <section>
+      <h2>Visited</h2>
+      <ul>
+        @foreach (var destination in ViewBag.JsonObj)
+        {
+          <li class="li-items"><a target="_blank"
+              href="@destination.DestinationUrl">@destination.DestinationName</a></li>
+        }
+      </ul>
+
+    </section>
+  </div>
 </div>

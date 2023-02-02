@@ -6,10 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 using DennisMvc.Models;
 using Newtonsoft.Json;
 
-
-
-
-
 namespace DennisMvc.Controllers
 {
     public class HomeController : Controller
@@ -36,8 +32,35 @@ namespace DennisMvc.Controllers
             var jsonStr = System.IO.File.ReadAllText("destinations.json");
             var JsonObj = JsonConvert.DeserializeObject<List<Destinations>>(jsonStr);
             ViewBag.JsonObj = JsonObj;
-            
+
             /* Question: when using ViewBag to present the JsonObj I dont need to pass JsonObj into View()?*/
+            return View();
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Route("/destinations")]
+        public IActionResult Destinations(Destinations dest)
+        {
+            // Läs in data - igen o igen o igen o igen... :-)
+            var jsonStr = System.IO.File.ReadAllText("destinations.json");
+            var JsonObj = JsonConvert.DeserializeObject<List<Destinations>>(jsonStr);            
+            ViewBag.Destinations = "Whenever I have ben to one of the great Alp destinations I can add a destination to my list throug the form below! (This description is presented with 'ViewBag').";
+            ViewBag.JsonObj = JsonObj;
+
+            if (ModelState.IsValid)
+            {
+                if (JsonObj == null)
+                {
+                    JsonObj = new List<Destinations>();
+                }
+                JsonObj.Add(dest);
+                var newJsonStr = JsonConvert.SerializeObject(JsonObj, Formatting.Indented);
+                System.IO.File.WriteAllText("destinations.json", newJsonStr);
+                return RedirectToAction("Destinations");
+            }            
+
             return View();
         }
     }
